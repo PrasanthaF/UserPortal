@@ -12,7 +12,7 @@
                     <th>Username</th>
                     <th>Email</th>
                     <th>Address</th>   
-                    <th>View</th>                        
+                    <th class="cell-center">View</th>                        
                 </tr>
             </thead>
             <tbody>
@@ -22,9 +22,9 @@
                     <td>{{ user.username }}</td>
                     <td>{{ user.email }}</td>
                     <td><user-address></user-address></td>
-                    <td>
+                    <td class="cell-center">
                         <div>
-                        <img src="images/detail.png" ui-sref="userDetail({id: user.id})" width="20" height="20"> 
+                        <img src="/images/detail.png" ui-sref="userDetail({id: user.id})" width="20" height="20"> 
                         </div>
                     </td>
                 </tr>

@@ -71,3 +71,7 @@ th {
   img:hover {
     cursor: pointer;
 }
+
+.cell-center{
+    text-align:center;
+}
