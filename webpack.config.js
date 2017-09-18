@@ -7,6 +7,9 @@ module.exports = {
         app: './app.js',
         vendor: ['angular', 'angular-resource', 'angular-ui-router', 'angular-ui-bootstrap']  
     },
+    
+    // watch: true,
+
     output: {
         path: __dirname + '/js',
         filename: 'app.bundle.js'

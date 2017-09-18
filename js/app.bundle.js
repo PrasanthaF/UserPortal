@@ -11,7 +11,7 @@ webpackJsonp([0],{
     var app = angular.module("userPortal",
         ["common.services", "ui.router", "ui.bootstrap"]);
 
-    // Routing Configurations
+        // Routing Configurations
     app.config(["$stateProvider",
         "$urlRouterProvider",
         function ($stateProvider, $urlRouterProvider) {
