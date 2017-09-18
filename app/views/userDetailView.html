@@ -1,0 +1,83 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        User Details for User ID : {{vm.user.id}}
+    </div>
+
+    <div class="panel-body" style="margin-left:10px">
+        <fieldset>
+            
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="username">User Name :</label>
+                <label class="col-md-4 control-label" for="usernameValue">{{ vm.user.username }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="name">Name :</label>
+                <label class="col-md-4 control-label" for="nameValue">{{ vm.user.name }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="email">Email :</label>
+                <label class="col-md-4 control-label" for="emailValue">{{ vm.user.email }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="street">Street :</label>
+                <label class="col-md-4 control-label" for="streetValue">{{ vm.user.address.street }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="suite">Suite :</label>
+                <label class="col-md-4 control-label" for="suiteValue">{{ vm.user.address.suite }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="city">City :</label>
+                <label class="col-md-4 control-label" for="cityValue">{{ vm.user.address.city }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="zipcode">Zip Code :</label>
+                <label class="col-md-4 control-label" for="zipcodeValue">{{ vm.user.address.zipcode }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="gpsCoordinates">GPS Coordinates :</label>
+                <span class="col-md-4 control-label"><label for="geoLatValue">{{ vm.user.address.geo.lat }}&nbsp;
+                    </label><label for="geoLngValue">{{ vm.user.address.geo.lng }}</label>
+                </span>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="phone">Phone :</label>
+                <label class="col-md-4 control-label" for="phoneValue">{{ vm.user.phone }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="website">Website :</label>
+                <label class="col-md-4 control-label" for="websiteValue">{{ vm.user.website }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="companyName">Company Name :</label>
+                <label class="col-md-4 control-label" for="companyNameValue">{{ vm.user.company.name }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="companyTheme">Company Theme :</label>
+                <label class="col-md-4 control-label" for="companyThemeValue">{{ vm.user.company.catchPhrase }}</label>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-md-2 control-label" for="companyBS">Company BS :</label>
+                <label class="col-md-4 control-label" for="companyBSValue">{{ vm.user.company.bs }}</label>
+            </div>
+
+        </fieldset>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-default" ui-sref="userList" style="width:80px">
+            <I class="glyphicon glyphicon-chevron-left"></i> Back
+        </a>
+    </div>
+</div>

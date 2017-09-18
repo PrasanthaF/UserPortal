@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>User Portal</title>
+
+    <!-- Style sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+
+    <!-- JS files -->
+    <script src="js/vendor.bundle.js"></script>
+    <script src="js/app.bundle.js"></script>
+
+</head>
+
+<body ng-app="userPortal">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" ui-sref="home">Welcome to User Portal</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ui-view></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <small>&copy; Copyright 2017 - User Portal</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

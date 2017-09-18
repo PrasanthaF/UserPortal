@@ -1,0 +1,35 @@
+<div class="container">
+<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">User List
+    </div>
+
+    <div class="panel-body">
+        <table class="table table-condensed table-striped table-bordered table-hover">
+
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Address</th>   
+                    <th class="cell-center">View</th>                        
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in vm.users">
+
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td><user-address></user-address></td>
+                    <td class="cell-center">
+                        <div>
+                        <img src="/images/detail.png" ui-sref="userDetail({id: user.id})" width="20" height="20"> 
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
