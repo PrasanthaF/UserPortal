@@ -16,9 +16,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="user in vm.users">
-
-                    <td>{{ user.name }}</td>
+                <tr ng-repeat="user in vm.users | orderBy:'-name'">
+                    <td>{{ user.name }} </td>
                     <td>{{ user.username }}</td>
                     <td>{{ user.email }}</td>
                     <td><user-address></user-address></td>
