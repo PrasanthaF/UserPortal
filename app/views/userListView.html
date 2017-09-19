@@ -17,9 +17,9 @@
             </thead>
             <tbody>
                 <tr ng-repeat="user in vm.users | orderBy:'-name'">
-                    <td>{{ user.name }} </td>
+                    <td><a ui-sref="userDetail({id: user.id})">{{ user.name }}</a></td>
                     <td>{{ user.username }}</td>
-                    <td>{{ user.email }}</td>
+                    <td><a>{{ user.email }}</a></td>
                     <td><user-address></user-address></td>
                     <td class="cell-center">
                         <div>
