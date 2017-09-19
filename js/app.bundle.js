@@ -166,8 +166,8 @@ webpackJsonp([0],{
     
     angualr.module('userPortal').directive('userAddress', function () {
         return {
-            template: "{{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }} {{ user.address.zipcode }}",
-            restrict: "E"
+            templateUrl: './app/views/addressView.html',
+            restrict: 'E'
         };
     });
 }());
