@@ -166,7 +166,7 @@ webpackJsonp([0],{
     
     angualr.module('userPortal').directive('userAddress', function () {
         return {
-            templateUrl: './app/views/addressView.html',
+            templateUrl: 'app/views/addressView.html',
             restrict: 'E'
         };
     });
